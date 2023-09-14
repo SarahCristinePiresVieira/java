@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var lista = [3,7,9,4,2,1,25,37]
+        var pares = []
+
+        for(var item = 0; item < lista.length; item = item + 1){
+            var restoDivisao = lista[item] % 2
+
+            if(restoDivisao == 0) {
+                pares.push(lista[item])
+            }
+        }
+
+        console.log(pares)
+        console.log(pares.length)
+
+        if(pares.length > 0) {
+            console.log("Tem algum par")
+        } else {
+            console.log("Nao tem pares")
+        }
+
+    </script>
+</body>
+</html>

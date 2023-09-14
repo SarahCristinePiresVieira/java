@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var matriz = [
+            [5, 7, 8],
+            [1, 2, 3],
+            [9, 6, 4]
+        ]
+
+        var matriz2 = [
+            [5, 7, 8],
+            [1, 2, 3],
+            [9, 6, 4]
+        ]
+
+        iguais = true
+
+        for (var linha = 0; linha < matriz.length; linha = linha + 1){
+            for (var coluna = 0; coluna < matriz[linha].length; coluna++){
+                if(matriz[linha][coluna] != matriz2[linha][coluna]){
+                    iguais = false
+                }
+            }
+        }
+        if(iguais){
+            console.log("Todos os numeros são iguais")
+        }else{
+            console.log("Alguem numero é diferente")
+        } 
+    </script>
+</body>
+</html>
